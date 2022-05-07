@@ -11,6 +11,11 @@ inquirer
         },
         {
             type: 'input',
+            name: 'description',
+            message: 'Describe your project i.e. what does it do? What is it for?'
+        },
+        {
+            type: 'input',
             name: 'installation',
             message: 'What are the steps to install your project?',
         },
@@ -51,6 +56,7 @@ inquirer
     .then((data) => {
         const answers = {
             title: data.title,
+            description: data.description,
             installation: data.installation,
             usage: data.usage,
             license: data.license,
@@ -59,13 +65,56 @@ inquirer
             github: data.github,
             email: data.email,
         }
-        // Testing answers in console log)
-        console.log(answers.title);
-        console.log(answers.installation);
-        console.log(answers.usage);
-        console.log(answers.license);
-        console.log(answers.contributors);
-        console.log(answers.tests);
-        console.log(answers.github);
-        console.log(answers.email);
-    })
+
+        // readMe structure with template literals inplace for the users answers
+        const readMe = `# ${answers.title}
+
+(Badge goes here - Need to populate when a license is selected from the list)
+        
+## Description
+        
+${answers.description}
+        
+## Table of Contents
+        
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+        
+## Installation
+        
+${answers.installation}
+        
+## Usage
+        
+${answers.usage}
+        
+## License
+        
+${answers.license}
+        
+## Contributing
+        
+${answers.contributors}
+        
+## Tests
+        
+${answers.tests}
+        
+## Questions
+        
+[${answers.github}](https://github.com/${answers.github})
+        
+If you've got any questions, contact me via email: [${answers.email}](${answers.email})`
+
+        // File name for when the file is created
+        const filename = 'sampleREADME.md';
+
+        // Creating the file with the readMe data written in the file
+        fs.writeFile(filename, readMe, (err) =>
+        err ? console.log(err) : console.log('Success!')
+        );
+    });
