@@ -15,12 +15,12 @@ inquirer
             message: 'Describe your project i.e. what does it do? What is it for?'
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'installation',
             message: 'What are the steps to install your project?',
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'usage',
             message: 'How is it used?'
         },
@@ -31,12 +31,12 @@ inquirer
             choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3'],
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'contributors',
             message: 'Who contributed on this project?',
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'tests',
             message: 'Give an example on how someone can test this project',
         },
@@ -106,7 +106,7 @@ ${answers.tests}
         
 ## Questions
         
-[${answers.github}](https://github.com/${answers.github})
+Visit my GitHub profile: [${answers.github}](https://github.com/${answers.github})
         
 If you've got any questions, contact me via email: [${answers.email}](${answers.email})`
 
