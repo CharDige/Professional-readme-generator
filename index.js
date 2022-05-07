@@ -42,6 +42,11 @@ inquirer
         },
         {
             type: 'input',
+            name: 'repo',
+            message: 'What is your repository name? (Include dashes and ensure correct capitalisation)'
+        },
+        {
+            type: 'input',
             name: 'github',
             message: "What's your GitHub username?",
         },
@@ -62,6 +67,7 @@ inquirer
             license: data.license,
             contributors: data.contributors,
             tests: data.tests,
+            repo: data.repo,
             github: data.github,
             email: data.email,
         }
@@ -69,8 +75,8 @@ inquirer
         // readMe structure with template literals inplace for the users answers
         const readMe = `# ${answers.title}
 
-(Badge goes here - Need to populate when a license is selected from the list)
-        
+![GitHub](https://img.shields.io/github/license/${answers.github}/${answers.repo})
+
 ## Description
         
 ${answers.description}
