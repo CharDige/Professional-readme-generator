@@ -100,7 +100,9 @@ ${answers.usage}
         
 ## License
         
-${answers.license}
+This project is licensed under the terms of the ${answers.license} license.
+
+You can find more information about licenses by visiting [Choose a license](https://choosealicense.com/).
         
 ## Contributing
         
