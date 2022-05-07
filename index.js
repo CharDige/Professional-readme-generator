@@ -27,7 +27,7 @@ inquirer
         {
             type: 'list',
             name: 'license',
-            message: 'What license do you want to assign your project?',
+            message: 'What license will you assign your project?',
             choices: ['MIT', 'GPLv2', 'Apache', 'GPLv3'],
         },
         {
@@ -39,11 +39,6 @@ inquirer
             type: 'editor',
             name: 'tests',
             message: 'Give an example on how someone can test this project',
-        },
-        {
-            type: 'input',
-            name: 'repo',
-            message: 'What is your repository name? (Include dashes and ensure correct capitalisation)'
         },
         {
             type: 'input',
@@ -75,7 +70,7 @@ inquirer
         // readMe structure with template literals inplace for the users answers
         const readMe = `# ${answers.title}
 
-![GitHub](https://img.shields.io/github/license/${answers.github}/${answers.repo})
+![GitHub](https://img.shields.io/badge/license-${answers.license}-brightgreen.svg)
 
 ## Description
         
