@@ -61,6 +61,8 @@ This project used the following technologies to build it:
 
 ## Usage
 
+Below, you will find a walkthrough video and screenshots on how to use this application. To see the results, view the [Output of professional README generator](./outputs/README.md) in the outputs folder.
+
 ### Video
 
 To view how this professional README generator works and how it can be used, you can watch [this walkthrough video](https://drive.google.com/file/d/1rA-6PknbEckufH45WlOnWlcWsBWhcApv/view?usp=sharing).
