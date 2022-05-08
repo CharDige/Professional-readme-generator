@@ -4,7 +4,7 @@
 
 ## Description
         
-This is the output from the professional README generator project. This shows the funcationality of the command line prompts and how they're being used to populate the sections of the README.md file.
+This is the output from the professional README generator project. This shows the functionality of the command line prompts and how they're being used to populate the sections of the README.md file.
         
 ## Table of Contents
         
