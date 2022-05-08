@@ -111,7 +111,7 @@ ${answers.tests}
         
 Visit my GitHub profile: [${answers.github}](https://github.com/${answers.github})
         
-If you've got any questions, contact me via email: [${answers.email}](${answers.email})`
+If you've got any questions, contact me via email: [${answers.email}](mailto:${answers.email})`
 
         // File name for when the file is created
         const filename = 'README.md';
