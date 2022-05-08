@@ -32,8 +32,8 @@ inquirer
         },
         {
             type: 'editor',
-            name: 'contributors',
-            message: 'Who contributed on this project?',
+            name: 'contributing',
+            message: 'What are the guidelines for people who would like to contribute to this project?',
         },
         {
             type: 'editor',
@@ -60,7 +60,7 @@ inquirer
             installation: data.installation,
             usage: data.usage,
             license: data.license,
-            contributors: data.contributors,
+            contributing: data.contributing,
             tests: data.tests,
             repo: data.repo,
             github: data.github,
@@ -101,7 +101,7 @@ You can find more information about licenses by visiting [Choose a license](http
         
 ## Contributing
         
-${answers.contributors}
+${answers.contributing}
         
 ## Tests
         
