@@ -1,6 +1,6 @@
-![GitHub](https://img.shields.io/github/license/CharDige/Professional-readme-generator)
-
 # Professional README generator
+
+![GitHub](https://img.shields.io/github/license/CharDige/Professional-readme-generator)
 
 ## Description
 
