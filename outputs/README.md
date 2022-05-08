@@ -4,7 +4,7 @@
 
 ## Description
         
-This is the output from the professional README generator project. This shows the functionality of the command line prompts and how they're being used to populate the sections of the README.md file.
+This is the output from the professional README generator project. This shows the functionality of the command line prompts and how they’re being used to populate the sections of the README.md file.
         
 ## Table of Contents
         
@@ -61,7 +61,6 @@ Interested in contributing to this project? Great! If you have a suggestion or a
 5. Open a pull request
 
 Thanks!
-
         
 ## Tests
         
@@ -71,4 +70,4 @@ This README.md file is an output to show how the professional README project wor
         
 Visit my GitHub profile: [CharDige](https://github.com/CharDige)
         
-If you've got any questions, contact me via email: [example@email.com](example@email.com)
+If you've got any questions, contact me via email: [example@email.com](mailto:example@email.com)
